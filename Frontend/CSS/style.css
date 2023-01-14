@@ -54,7 +54,7 @@ p{
 
 /*styling for the images*/
 .row {
-  display: flexbox;
+display: flex;
   margin: 8px -16px;
 }
 
