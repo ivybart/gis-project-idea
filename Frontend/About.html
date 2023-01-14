@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Vue JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+    <!-- jQuery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/about.css">
+    <title>About Me</title>
+    <link rel="icon" type="image/x-icon" href="Resources/Images/favicon.ico">
+</head>
+<body id="about">
+    <section>
+        <div class="about-me">
+            <h1>About Me</h1>
+            <div class="wrapper">
+                <div class="content">
+                    <h3>This is a small account of who I am and what I do.</h3>
+                    <p>My name is Ivy Bartonjo and am a third year student at JKUAT, I am in the GIS field.
+                        I spend most of my time learning different GIS applications so that I can find a way to implement them
+                        in our everyday life. My hobbies include swimmimg, hiking, reading and cycling. My greatest interest is in the 
+                        remote sensing field.</p>
+                    <div class="button">
+                        <a href="index.html">Back Home</a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                        <a href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest-p"></i></a>
+                        <a href="https://twitter.com/login?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="image-section">
+                    <img src="Resources/Images/me21.jpg" alt="a waving bear">
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- comment section -->
+
+    <section id="app">
+        <div class="container">
+        <div class="row">
+            <div class="col-6">
+            <div class="comment">
+                <p v-for="items in item" v-text="items"></p>
+            </div><!--End Comment-->
+            </div><!--End col -->
+        </div><!-- End row -->
+
+        <div class="row">
+            <div class="col-6">
+        <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+            <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+            </div><!-- End col -->
+        </div><!--End Row -->
+        </div><!--End Container -->
+    </section><!-- end App -->
+
+<script src="JS/script.js"></script>
+</body>
+</html>

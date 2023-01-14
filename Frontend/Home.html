@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Vue JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+    <!-- jQuery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ivy's Ideas</title>
+    <link rel="icon" type="image/x-icon" href="Resources/Images/earth.ico">
+</head>
+<body>
+    <!-- menu bar -->
+    <div class="topnav">
+
+        <a class="active" href="Home.html"><i class="fa fa-home"></i></a>
+        <div class="topnav-right">
+          <a href="About.html" target="_blank">About Me</a>
+        </div>
+       
+    </div>
+
+    <!-- project ideas intro -->
+    <section>
+        <h2>GIS PROJECT IDEAS</h2>
+        <P><i>Everything geospatial information</i></P>
+        <p>The following are some of the ideas on how to apply GIS solutions to various problems.<br>
+            The ideas apply knowledge learnt in class to help solve a variety of issues,
+             in sectors such as agriculture,<br> business and transport.
+        </p>
+    </section>
+
+    <!-- Project ideas description -->
+<section class="row">
+    <article class="column">
+      <p>Flood Mapping</p>
+      <img src="Resources/Images/geojango-maps-Z8UgB80_46w-unsplash.jpg" alt="Random Name" style="width:100%">
+      <p>The project involves mapping the regions that flood in Tana River and therefore help identify suitable control measures.
+        It applies microwave remote sensing i.e processing and analysis or RADAR images.
+      </p>
+    </article>
+
+    <article class="column">
+      <p>Suitability Analysis</p>
+      <img src="Resources/Images/tamas-tuzes-katai-rEn-AdBr3Ig-unsplash.jpg" alt="Random Name" style="width:100%">
+      <p>The idea here is to establish areas that are most suitable for growing kiwi fruits in Kenya.
+        It uses various datasets such as river maps , soil maps , rainfall distribution as well as land use maps.
+      </p>
+    </article>
+
+    <article class="column">
+      <p>Network Analysis</p>
+      <img src="Resources/Images/valeria-fursa-zSrksQgp4W0-unsplash.jpg" alt="Random Name" style="width:100%">
+      <p>This project is intended to create a path for hikers in Karura. It chooses the optimal and safest path for this particular group whether,
+        hiking or cycling.
+      </p>
+    </article>
+
+  </section>
+  <!-- comment section -->
+
+  <section id="app">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="comment">
+            <p v-for="items in item" v-text="items"></p>
+          </div><!--End Comment-->
+        </div><!--End col -->
+      </div><!-- End row -->
+
+      <div class="row">
+        <div class="col-6">
+      <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+          <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+        </div><!-- End col -->
+      </div><!--End Row -->
+    </div><!--End Container -->
+  </section><!-- end App -->
+
+<script src="JS/script.js"></script>
+</body>
+</html>

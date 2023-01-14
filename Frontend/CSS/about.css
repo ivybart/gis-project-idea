@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color:white;
+    opacity: 1;
+}
+
+.about-me {
+    width: 100%;
+
+}
+
+.about-me h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #208B3A;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 50px;
+}
+
+.about-me h1::after {
+    content:"";
+    height: 5px; 
+    width: 200px;
+    background-color: #208B3A;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.wrapper {
+    padding:0px 60px;
+    margin: 60px auto;
+}
+
+.content {
+    width: 60%;
+    float: left;
+    text-align: left;
+    padding: 0px 30px;
+}
+
+.content h3 {
+    color: #222;
+    letter-spacing: 1px;
+}
+
+.content p {
+    font-family: sans-serif;
+    font-size: 17px;
+    color: #3d3d3d;
+    margin-top: 20px;
+}
+
+.content .button {
+    margin-top: 40px;
+}
+
+.content .button a {
+    color: #fff;;
+    background-color: #208B3A;
+    border: 1px solid #208B3A;
+    padding: 10px 35px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+.content .button a:hover {
+    background-color:#2DC653;
+    
+}
+
+.content .social {
+    margin-top: 30px;
+    margin-left: 15px ;
+}
+
+.content .social a {
+    text-decoration: none;
+    color: #222;
+    font-size: 25px;
+}
+
+.content .social a:hover {
+    color: #2DC653;
+    transition: 1s ease;
+}
+
+.content .social i {
+    height: 40px;
+    width:40px ;
+    background-color:#fff ;
+    border: 1px solid #222;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.image-section {
+    width: 40%;
+    float: right;
+    padding: 0px 30px;
+    
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+/* Styling for the comment section */
+#app{
+    position: fixed;
+    bottom: 0;
+    left:0;
+}
+.container {
+    position: fixed;
+    bottom: 0;
+	max-width: 1000px;
+	margin: 30px auto;
+	background: #fff;
+	border-radius: 8px;
+	padding: 20px;
+    
+}
+
+.comment {
+	display:block ;
+	transition: all 1s;
+}
+.commentClicked {
+	min-height: 0px;
+	border: 2px solid rgb(219, 217, 217);
+	border-radius: 5px;
+	padding: 5px 10px
+}
+
+.container textarea {
+	width: 100%;
+	border: none;
+	background: #E8E8E8;
+	padding: 5px 10px;
+	height: 50%;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 2px solid #0A2E36;
+	transition: all 0.5s;
+	margin-top: 15px;
+    
+}
+
+button.primaryContained {
+	background: #208B3A;
+	color: #fff;
+	padding: 10px 10px;
+	border: none;
+	margin-top: 0px;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+	font-size: 10px;
+	border-radius: 5px;
+}
+
+button.primaryContained:hover {
+	background:#2DC653;
+}
+
+@media screen and (max-width: 900px) {
+    .about-me{
+        width: 100%;
+        padding-top:20px ;
+    }
+    .about-me h1{
+        font-size: 32px;
+    }
+    .content{
+        width: 100%;
+        float: none;
+    }
+    .content .button{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .content .button a{
+        padding: 8px 25px;
+    }
+    .content .social{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .content .social a{
+        font-size: 21px;
+    }
+    .image-section{
+        float: none;
+        width: 100%;
+        margin-top: 25px;
+    }
+    .container{
+        float: none;
+        width: 100%;
+        margin-top: 21px;
+    }
+    
+}

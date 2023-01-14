@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Ivy's Ideas</title>
+    <link rel="icon" type="image/x-icon" href="Resources/Images/favicon.ico">
+</head>
+<body onload="document.getElementById('defaultOpen').click();">
+    <button class="tablink" onclick="openPage('Home', this, '#0DAB76')" id="defaultOpen">Home</button>
+    <button class="tablink" onclick="openPage('Projects', this, '#0DAB76')">Projects</button>
+    <a href="About.html" target="_blank"><button class="tablink" onclick="openPage('About', this, '#0DAB76')">About Me</button>
+    </a>
+    <div id="Home" class="tabcontent">
+            <!-- The Intro Section Home -->
+<div class="container">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font"><b>GIS Project Ideas</b></h1>
+        <h1 class="large-font" style="color:MediumSeaGreen;"><b>Any Ideas?</b></h1>
+        <p><span style="font-size:36px">GIS is everywhere.</span>GIS is very wide and can be used vastly to provide solutions to 
+        the world's problems. It is important to identify a need or problem in our society and therefore find the
+         most suitable application.</p>
+        <a href="https://www.educba.com/applications-of-gis/" target="_blank" class="button">Read More</a>
+      </div>
+      <div class="column-33">
+          <img src="Resources/Images/Applications.png" width="1500" height="1500">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Application Section Home -->
+  <div class="container" style="background-color:#f1f1f1;">
+    <div class="row">
+      <div class="column-33">
+        <img src="Resources/Images/GIS-vector.jpg" alt="App" width="1500" height="1500">
+      </div>
+      <div class="column-66">
+        <h1 class="xlarge-font"><b>GIS Software</b></h1>
+        <h1 class="large-font" style="color:mediumseagreen;"><b>Where is it?</b></h1>
+        <p><span style="font-size:24px">GIS applications.</span>Both opensource and commercial software are used in achieving 
+        the required analysis. The budget, application, time available e.t.c will determine what software to choose.</p>
+        <a href="http://wiki.gis.com/wiki/index.php/List_of_GIS_software" target="_blank" class="button">Read More</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- The Data Section Home -->
+  <div class="container">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font"><b>GIS is all data</b></h1>
+        <h1 class="large-font" style="color:MediumSeaGreen;"><b>Where is the data?</b></h1>
+        <p><span style="font-size:36px">GIS employs both spatial and non spatial data.</span>The data that is processed to establish
+        trends and therefore offer the required solutions is vast. Many companies and website provide these datasets. The data ranges from
+        images , vector data to statistical data.</p>
+        <a href="https://libguides.rutgers.edu/gis/datasources" target="_blank" class="button">Read More</a>
+      </div>
+      <div class="column-33">
+          <img src="Resources/Images/data.jpeg" width="1500" height="1500" >
+      </div>
+    </div>
+  </div>
+  
+    </div>
+<!-- Projects Section -->
+    <div id="Projects" class="tabcontent"> 
+        <div class="main">
+
+        <h1>My Project Ideas</h1>
+        <hr>
+        
+        <h2 style="color: mediumseagreen;">Ideas</h2>
+        <p>Here are a few thoughts on projects that can be done using GIS.</p>
+        
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+        <div class="column">
+            <div class="content">
+                <img src="Resources/Images/water-supply.png" alt="water supply pipes" style="width:100%">
+                <h3>Water Supply</h3>
+                <p>GIS can be used to map current water supply and therefore show appropriate regions to
+                    install water meters. This can be used by water supply companies to get real time data
+                    on water pressure and consumption rates. The maps can also be used to fill in the water
+                    supply gaps by showing areas that need water supply infrastructure. Software such as qgis ,
+                    python and web development apps are some of the reqirements.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="Resources/Images/suitability-analysis.png" alt="zones for growing crops" style="width:100%">
+                <h3>Suitability Analysis</h3>
+                <p>The idea here is to establish areas that are most suitable for growing horticultural crops in Kenya.
+                    Horticultral crops such as vegetables and fruits are in constant demand in Kenya with a shortage in supply.
+                    An app can therefore be developed to enable suitable farming regions for a particular crop therefore expanding
+                    the growing regions. This would then increase supply and help the farmers grow what is appropriate in their regions.
+                    It uses various datasets such as river maps , soil maps , rainfall distribution as well as land use maps.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="Resources/Images/forest-disease.jpeg" alt="diseased trees" style="width:100%">
+                <h3>Forest Pest and Disease Mapping</h3>
+                <p>Forests are being devoured by pests and disease reducing their coverage. Satellite images 
+                    can be analysed using various algorithms by comparing what normal conditions are with the 
+                    forest in question.This information can then be mapped and used by institutions such as <i>KEFRI</i>.
+                    to plan intervention measures.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="Resources/Images/restaurants.jpeg" alt="map of restaurants" style="width:100%">
+                <h3>Restaurants Mapping</h3>
+                <p>More and more diverse restaurants  are being established daily, it is therefore necessary
+                    to map them. Interactive web maps of these restaurants can be created , they can allow for 
+                    people to locate them by distance , type of food and drink , aesthetics e.t.c.
+                </p>
+            </div>
+        </div>
+        <!-- END GRID -->
+        </div>
+        <!-- END MAIN -->
+        </div>
+        <div class="content">
+            <!--navigation images grid -->
+            <div class="row1">
+                <div class="column1">
+                  <img src="Resources/Images/nav2.jpeg" alt="map on a phone" style="width:100%">
+                </div>
+                <div class="column1">
+                  <img src="Resources/Images/nav.jpeg" alt="map on a phone" style="width:100%">
+                </div>
+                <div class="column1">
+                  <img src="Resources/Images/nav3.jpeg" alt="map on a phone" style="width:100%">
+                </div>
+              </div>
+            <h3>Navigation</h3>
+                <p>Another project worth mentioning is creating a navigation app that can be used as by hikers, runners and cyclists.
+                The app can give the best and safest that they can use to carry out the mentioned activities as well as provide them
+                with live location incase they get lost.</p>
+          </div>
+        </div>
+       </div>
+    </div>
+<script src="JS/script.js"></script>
+</body>
+</html>
